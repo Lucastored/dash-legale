@@ -9,6 +9,14 @@
 </head>
 
 <body>
+
+<!-- Notifica automatica -->
+<div id="notification-banner" style="background-color: #ffefc1; padding: 12px; border-bottom: 1px solid #f0c36d; text-align: center; font-weight: bold; position: fixed; top: 0; width: 100%; z-index: 9999;">
+  🔔 Nuovi aggiornamenti disponibili! Consulta le sezioni Normativa o Feed RSS.
+  <button onclick="document.getElementById('notification-banner').style.display='none'" style="margin-left: 15px; padding: 5px 10px; cursor: pointer;">Chiudi</button>
+</div>
+<div style="height: 50px;"></div> <!-- Spazio per evitare sovrapposizione -->
+
   <header>
     <h1>📊 Dashboard Normativa UE - Privacy, Cybersecurity & AI</h1>
   </header>
@@ -50,18 +58,15 @@
     </section>
 
     <section id="rss">
-    <section id="rss">
-  <h2>📰 Aggiornamenti e feed RSS</h2>
-  <ul>
-    <li><a href="https://edpb.europa.eu/rss.xml" target="_blank">RSS dell’EDPB</a></li>
-    <li><a href="https://eur-lex.europa.eu/rss/whatsnew/eurlex_latest.xml" target="_blank">RSS da EUR-Lex (norme UE)</a></li>
-    <li><a href="https://www.gazzettaufficiale.it/rss/guri.xml" target="_blank">RSS della Gazzetta Ufficiale Italiana</a></li>
-    <li><a href="https://www.agendadigitale.eu/feed/" target="_blank">RSS di Agenda Digitale</a></li>
-    <li><a href="https://iapp.org/rss/news/" target="_blank">RSS di IAPP (International Association of Privacy Professionals)</a></li>
-    <li><a href="https://www.cybersecurity360.it/feed/" target="_blank">RSS di Cybersecurity360</a></li>
-  </ul>
-</section>
-
+      <h2>📰 Aggiornamenti e feed RSS</h2>
+      <ul>
+        <li>RSS del Garante Privacy</li>
+        <li>RSS dell’EDPB</li>
+        <li>RSS della Gazzetta Ufficiale Italiana</li>
+        <li>RSS da EUR-Lex</li>
+        <li>RSS da IAPP, Cybersecurity360, AgendaDigitale.eu</li>
+      </ul>
+    </section>
 
     <section id="documenti">
       <h2>📚 Documenti tecnici e risorse</h2>
