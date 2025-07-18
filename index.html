@@ -1,91 +1,90 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Dashboard Legale</title>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Normativa Privacy e Cybersecurity</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    window.onload = function () {
+      const notification = document.getElementById("browser-notification");
+      if (notification) {
+        notification.style.display = "block";
+        setTimeout(() => {
+          notification.style.display = "none";
+        }, 10000);
+      }
+    };
+  </script>
 </head>
 <body>
-<header>
-<h1>📊 Dashboard Normativa UE - Privacy, Cybersecurity &amp; AI</h1>
-</header>
-<script src="feed.js"></script>
-<div id="rss-feeds"></div>
-<nav>
-<ul>
-<li><a href="#normativa">📌 Normativa UE</a></li>
-<li><a href="#fonti">🏛️ Fonti ufficiali</a></li>
-<li><a href="#rss">📰 Feed RSS</a></li>
-<li><a href="#documenti">📚 Risorse tecniche</a></li>
-<li><a href="#notifiche">🔔 Notifiche</a></li>
-<li><a href="#calendario">📅 Calendario</a></li>
-</ul>
-</nav>
-<main>
-<section id="normativa">
-<h2>📌 Normativa e regolamenti UE</h2>
-<ul>
-<li>Regolamento (UE) 2016/679 – GDPR</li>
-<li>AI Act – Regolamento sull’intelligenza artificiale</li>
-<li>Direttiva (UE) 2022/2555 – NIS2</li>
-<li>DORA – Digital Operational Resilience Act</li>
-<li>eIDAS2 – Regolamento su identità digitale europea</li>
-<li>Data Governance Act e Data Act</li>
-</ul>
-</section>
-<section id="fonti">
-<h2>🏛️ Fonti istituzionali</h2>
-<ul>
-<li><a href="https://www.garanteprivacy.it" target="_blank">Garante Privacy italiano</a></li>
-<li><a href="https://edpb.europa.eu" target="_blank">European Data Protection Board (EDPB)</a></li>
-<li><a href="https://digital-strategy.ec.europa.eu" target="_blank">Commissione Europea – AI e Digital</a></li>
-<li><a href="https://www.enisa.europa.eu" target="_blank">ENISA – Agenzia UE per la cybersicurezza</a></li>
-</ul>
-</section>
-<section id="rss">
-<h2>📰 Aggiornamenti e feed RSS</h2>
-<ul>
-<li>RSS del Garante Privacy</li>
-<li>RSS dell’EDPB</li>
-<li>RSS della Gazzetta Ufficiale Italiana</li>
-<li>RSS da EUR-Lex</li>
-<li>RSS da IAPP, Cybersecurity360, AgendaDigitale.eu</li>
-</ul>
-</section>
-<section id="documenti">
-<h2>📚 Documenti tecnici e risorse</h2>
-<ul>
-<li>Linee guida EDPB (DPIA, DPO, consenso, trasferimenti)</li>
-<li>FAQ Garante italiano (AI, profilazione, data breach)</li>
-<li>Schemi riepilogativi: NIS2, AI Act, DORA</li>
-<li>Checklist compliance: GDPR, NIS2, AI Act</li>
-</ul>
-</section>
-<section id="notifiche">
-<h2>🔔 Notifiche automatiche</h2>
-<p>Avvisi su:</p>
-<ul>
-<li>Nuove norme approvate</li>
-<li>Pareri e linee guida EDPB</li>
-<li>Sanzioni del Garante</li>
-<li>Novità su AI, cybersecurity, protezione dati</li>
-</ul>
-<p>In futuro: popup browser o email</p>
-</section>
-<section id="calendario">
-<h2>📅 Calendario normativo</h2>
-<ul>
-<li>Scadenze: attuazione NIS2, AI Act, DORA</li>
-<li>Entrate in vigore</li>
-<li>Consultazioni pubbliche aperte</li>
-</ul>
-</section>
-</main>
-<footer>
-<p>Ultimo aggiornamento automatico: <span id="last-update">in fase di sviluppo</span></p>
-</footer>
-<script src="feed.js"></script>
+  <div id="browser-notification" style="display:none; background-color: #ffd700; color: #000; padding: 1em; text-align: center;">
+    🔔 Nuovo aggiornamento disponibile sulla normativa UE in materia di AI e NIS2!
+  </div>
+
+  <header>
+    <h1>📊 Dashboard Normativa Privacy e Cybersecurity</h1>
+    <p>Monitoraggio continuo delle novità legislative, fonti ufficiali e strumenti operativi.</p>
+  </header>
+
+  <section>
+    <h2>📌 Normativa e Regolamenti UE</h2>
+    <ul>
+      <li>Regolamento (UE) 2016/679 – GDPR</li>
+      <li>Regolamento sull’Intelligenza Artificiale – AI Act</li>
+      <li>Direttiva (UE) 2022/2555 – NIS2</li>
+      <li>DORA – Digital Operational Resilience Act</li>
+      <li>Regolamento eIDAS2 (identità digitale europea)</li>
+      <li>Data Governance Act e Data Act</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🏛️ Fonti Istituzionali</h2>
+    <ul>
+      <li><a href="https://www.garanteprivacy.it" target="_blank">Garante Privacy italiano</a></li>
+      <li><a href="https://edpb.europa.eu" target="_blank">European Data Protection Board (EDPB)</a></li>
+      <li><a href="https://digital-strategy.ec.europa.eu" target="_blank">Commissione Europea – AI e Digital</a></li>
+      <li><a href="https://www.enisa.europa.eu" target="_blank">ENISA – Agenzia UE per la cybersicurezza</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📰 Feed RSS</h2>
+    <ul>
+      <li><a href="https://www.garanteprivacy.it/web/guest/home/rss" target="_blank">RSS Garante Privacy</a></li>
+      <li><a href="https://edpb.europa.eu/edpb_en.xml" target="_blank">RSS EDPB</a></li>
+      <li><a href="https://www.gazzettaufficiale.it/rss/privacy" target="_blank">RSS Gazzetta Ufficiale – Privacy</a></li>
+      <li><a href="https://eur-lex.europa.eu/legal-content/IT/RSS/?uri=OJ:L:2023:000:TOC" target="_blank">RSS EUR-Lex</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📚 Documenti tecnici e risorse</h2>
+    <ul>
+      <li>Linee guida EDPB su DPIA, DPO, consenso, trasferimenti internazionali</li>
+      <li>FAQ Garante su AI, profilazione e data breach</li>
+      <li>Schemi riepilogativi NIS2, AI Act, DORA</li>
+      <li>Checklist per la compliance (GDPR, NIS2, AI Act)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🔔 Notifiche automatiche</h2>
+    <ul>
+      <li>Avvisi per nuove norme, linee guida, provvedimenti del Garante</li>
+      <li>Popup temporaneo e possibilità futura di ricezione via email</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📅 Calendario normativo</h2>
+    <ul>
+      <li>Scadenze importanti (attuazione NIS2, AI Act, DORA)</li>
+      <li>Entrate in vigore normative</li>
+      <li>Consultazioni pubbliche aperte</li>
+    </ul>
+  </section>
 </body>
 </html>
