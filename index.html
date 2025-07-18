@@ -7,10 +7,7 @@
 <title>Dashboard Legale</title>
 <link href="style.css" rel="stylesheet"/>
 </head>
-<body><div id="notification-banner" style="position: fixed; top: 0; left: 0; width: 100%; background-color: #ffcc00; color: black; text-align: center; padding: 10px; z-index: 9999; font-weight: bold;">🔔 Nuovo aggiornamento disponibile! Questa notifica scomparirà tra pochi secondi.</div>
-<!-- Notifica automatica -->
-
-<div style="height: 50px;"></div> <!-- Spazio per evitare sovrapposizione -->
+<body>
 <header>
 <h1>📊 Dashboard Normativa UE - Privacy, Cybersecurity &amp; AI</h1>
 </header>
@@ -90,12 +87,5 @@
 <p>Ultimo aggiornamento automatico: <span id="last-update">in fase di sviluppo</span></p>
 </footer>
 <script src="feed.js"></script>
-<script>
-setTimeout(function() {
-    var banner = document.getElementById('notification-banner');
-    if (banner) {
-        banner.style.display = 'none';
-    }
-}, 6000);  // scompare dopo 6 secondi
-</script></body>
+</body>
 </html>
