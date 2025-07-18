@@ -1,109 +1,101 @@
 <!DOCTYPE html>
+
 <html lang="it">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard Legale</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard Legale</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
-
-<body>
-
+<body><div id="notification-banner" style="position: fixed; top: 0; left: 0; width: 100%; background-color: #ffcc00; color: black; text-align: center; padding: 10px; z-index: 9999; font-weight: bold;">🔔 Nuovo aggiornamento disponibile! Questa notifica scomparirà tra pochi secondi.</div>
 <!-- Notifica automatica -->
-<div id="notification-banner" style="background-color: #ffefc1; padding: 12px; border-bottom: 1px solid #f0c36d; text-align: center; font-weight: bold; position: fixed; top: 0; width: 100%; z-index: 9999;">
-  🔔 Nuovi aggiornamenti disponibili! Consulta le sezioni Normativa o Feed RSS.
-  <button onclick="document.getElementById('notification-banner').style.display='none'" style="margin-left: 15px; padding: 5px 10px; cursor: pointer;">Chiudi</button>
-</div>
+
 <div style="height: 50px;"></div> <!-- Spazio per evitare sovrapposizione -->
-
-  <header>
-    <h1>📊 Dashboard Normativa UE - Privacy, Cybersecurity & AI</h1>
-  </header>
-  <script src="feed.js"></script>
-  <div id="rss-feeds"></div>
-
-  <nav>
-    <ul>
-      <li><a href="#normativa">📌 Normativa UE</a></li>
-      <li><a href="#fonti">🏛️ Fonti ufficiali</a></li>
-      <li><a href="#rss">📰 Feed RSS</a></li>
-      <li><a href="#documenti">📚 Risorse tecniche</a></li>
-      <li><a href="#notifiche">🔔 Notifiche</a></li>
-      <li><a href="#calendario">📅 Calendario</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="normativa">
-      <h2>📌 Normativa e regolamenti UE</h2>
-      <ul>
-        <li>Regolamento (UE) 2016/679 – GDPR</li>
-        <li>AI Act – Regolamento sull’intelligenza artificiale</li>
-        <li>Direttiva (UE) 2022/2555 – NIS2</li>
-        <li>DORA – Digital Operational Resilience Act</li>
-        <li>eIDAS2 – Regolamento su identità digitale europea</li>
-        <li>Data Governance Act e Data Act</li>
-      </ul>
-    </section>
-
-    <section id="fonti">
-      <h2>🏛️ Fonti istituzionali</h2>
-      <ul>
-        <li><a href="https://www.garanteprivacy.it" target="_blank">Garante Privacy italiano</a></li>
-        <li><a href="https://edpb.europa.eu" target="_blank">European Data Protection Board (EDPB)</a></li>
-        <li><a href="https://digital-strategy.ec.europa.eu" target="_blank">Commissione Europea – AI e Digital</a></li>
-        <li><a href="https://www.enisa.europa.eu" target="_blank">ENISA – Agenzia UE per la cybersicurezza</a></li>
-      </ul>
-    </section>
-
-    <section id="rss">
-      <h2>📰 Aggiornamenti e feed RSS</h2>
-      <ul>
-        <li>RSS del Garante Privacy</li>
-        <li>RSS dell’EDPB</li>
-        <li>RSS della Gazzetta Ufficiale Italiana</li>
-        <li>RSS da EUR-Lex</li>
-        <li>RSS da IAPP, Cybersecurity360, AgendaDigitale.eu</li>
-      </ul>
-    </section>
-
-    <section id="documenti">
-      <h2>📚 Documenti tecnici e risorse</h2>
-      <ul>
-        <li>Linee guida EDPB (DPIA, DPO, consenso, trasferimenti)</li>
-        <li>FAQ Garante italiano (AI, profilazione, data breach)</li>
-        <li>Schemi riepilogativi: NIS2, AI Act, DORA</li>
-        <li>Checklist compliance: GDPR, NIS2, AI Act</li>
-      </ul>
-    </section>
-
-    <section id="notifiche">
-      <h2>🔔 Notifiche automatiche</h2>
-      <p>Avvisi su:</p>
-      <ul>
-        <li>Nuove norme approvate</li>
-        <li>Pareri e linee guida EDPB</li>
-        <li>Sanzioni del Garante</li>
-        <li>Novità su AI, cybersecurity, protezione dati</li>
-      </ul>
-      <p>In futuro: popup browser o email</p>
-    </section>
-
-    <section id="calendario">
-      <h2>📅 Calendario normativo</h2>
-      <ul>
-        <li>Scadenze: attuazione NIS2, AI Act, DORA</li>
-        <li>Entrate in vigore</li>
-        <li>Consultazioni pubbliche aperte</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>Ultimo aggiornamento automatico: <span id="last-update">in fase di sviluppo</span></p>
-  </footer>
-
-  <script src="feed.js"></script>
-</body>
+<header>
+<h1>📊 Dashboard Normativa UE - Privacy, Cybersecurity &amp; AI</h1>
+</header>
+<script src="feed.js"></script>
+<div id="rss-feeds"></div>
+<nav>
+<ul>
+<li><a href="#normativa">📌 Normativa UE</a></li>
+<li><a href="#fonti">🏛️ Fonti ufficiali</a></li>
+<li><a href="#rss">📰 Feed RSS</a></li>
+<li><a href="#documenti">📚 Risorse tecniche</a></li>
+<li><a href="#notifiche">🔔 Notifiche</a></li>
+<li><a href="#calendario">📅 Calendario</a></li>
+</ul>
+</nav>
+<main>
+<section id="normativa">
+<h2>📌 Normativa e regolamenti UE</h2>
+<ul>
+<li>Regolamento (UE) 2016/679 – GDPR</li>
+<li>AI Act – Regolamento sull’intelligenza artificiale</li>
+<li>Direttiva (UE) 2022/2555 – NIS2</li>
+<li>DORA – Digital Operational Resilience Act</li>
+<li>eIDAS2 – Regolamento su identità digitale europea</li>
+<li>Data Governance Act e Data Act</li>
+</ul>
+</section>
+<section id="fonti">
+<h2>🏛️ Fonti istituzionali</h2>
+<ul>
+<li><a href="https://www.garanteprivacy.it" target="_blank">Garante Privacy italiano</a></li>
+<li><a href="https://edpb.europa.eu" target="_blank">European Data Protection Board (EDPB)</a></li>
+<li><a href="https://digital-strategy.ec.europa.eu" target="_blank">Commissione Europea – AI e Digital</a></li>
+<li><a href="https://www.enisa.europa.eu" target="_blank">ENISA – Agenzia UE per la cybersicurezza</a></li>
+</ul>
+</section>
+<section id="rss">
+<h2>📰 Aggiornamenti e feed RSS</h2>
+<ul>
+<li>RSS del Garante Privacy</li>
+<li>RSS dell’EDPB</li>
+<li>RSS della Gazzetta Ufficiale Italiana</li>
+<li>RSS da EUR-Lex</li>
+<li>RSS da IAPP, Cybersecurity360, AgendaDigitale.eu</li>
+</ul>
+</section>
+<section id="documenti">
+<h2>📚 Documenti tecnici e risorse</h2>
+<ul>
+<li>Linee guida EDPB (DPIA, DPO, consenso, trasferimenti)</li>
+<li>FAQ Garante italiano (AI, profilazione, data breach)</li>
+<li>Schemi riepilogativi: NIS2, AI Act, DORA</li>
+<li>Checklist compliance: GDPR, NIS2, AI Act</li>
+</ul>
+</section>
+<section id="notifiche">
+<h2>🔔 Notifiche automatiche</h2>
+<p>Avvisi su:</p>
+<ul>
+<li>Nuove norme approvate</li>
+<li>Pareri e linee guida EDPB</li>
+<li>Sanzioni del Garante</li>
+<li>Novità su AI, cybersecurity, protezione dati</li>
+</ul>
+<p>In futuro: popup browser o email</p>
+</section>
+<section id="calendario">
+<h2>📅 Calendario normativo</h2>
+<ul>
+<li>Scadenze: attuazione NIS2, AI Act, DORA</li>
+<li>Entrate in vigore</li>
+<li>Consultazioni pubbliche aperte</li>
+</ul>
+</section>
+</main>
+<footer>
+<p>Ultimo aggiornamento automatico: <span id="last-update">in fase di sviluppo</span></p>
+</footer>
+<script src="feed.js"></script>
+<script>
+setTimeout(function() {
+    var banner = document.getElementById('notification-banner');
+    if (banner) {
+        banner.style.display = 'none';
+    }
+}, 6000);  // scompare dopo 6 secondi
+</script></body>
 </html>
